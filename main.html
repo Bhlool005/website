@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>K&A Coffee Shop</title>
+  <title>K&A Coffee Truck</title>
+  <meta name="description" content="Fresh coffee on the go – Check out our menu, locations, and contact info!">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <!-- Header with background image -->
   <header>
-    <h1>K&A Coffee Shop</h1>
-    <p>Fresh Coffee on the Go – Fort Wayne</p>
-    <nav>
+    <h1>K&A Coffee Truck</h1>
+    <p>Fresh Coffee on the Go &ndash; Fort Wayne</p>
+    <nav aria-label="Main navigation">
       <ul>
         <li><a href="#menu">Menu</a></li>
         <li><a href="#locations">Locations</a></li>
@@ -21,50 +22,59 @@
   </header>
 
   <!-- Menu Section -->
-  <section id="menu">
-    <h2>Our Menu</h2>
-    <table>
-      <tr><th>Drink</th><th>Price</th></tr>
-      <tr><td>Espresso</td><td>$3</td></tr>
-      <tr><td>Cappuccino</td><td>$4</td></tr>
-      <tr><td>Latte</td><td>$4.50</td></tr>
-    </table>
-    <img src="img.jpg" alt="Coffee drinks">
-  </section>
+  <main>
+    <section id="menu">
+      <h2>Our Menu</h2>
+      <table>
+        <tr><th>Drink</th><th>Price</th></tr>
+        <tr><td>Espresso</td><td>$3</td></tr>
+        <tr><td>Cappuccino</td><td>$4</td></tr>
+        <tr><td>Latte</td><td>$4.50</td></tr>
+        <tr><td>Mocha</td><td>$5</td></tr>
+        <tr><td>Cold Brew</td><td>$4</td></tr>
+      </table>
+      <img src="img.jpg" alt="A selection of coffee drinks from our truck">
+    </section>
 
-  <!-- Locations Section -->
-  <section id="locations">
-    <h2>Locations</h2>
-    <ul>
-      <li>City Park – 9AM to 12PM</li>
-      <li>Downtown Office – 1PM to 4PM</li>
-    </ul>
-  </section>
+    <!-- Locations Section -->
+    <section id="locations">
+      <h2>Locations</h2>
+      <ul>
+        <li>City Park – 9AM to 12PM</li>
+        <li>Downtown Office – 1PM to 4PM</li>
+      </ul>
+      <!-- Optional: Google Maps Embed Example -->
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="200" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <p>Email: <a href="mailto:serveyourcoffee@gmail.com">serveyourcoffee@gmail.com</a></p>
-    <p>Phone: <a href="tel:+12605999996">260-599-9996</a></p>
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>Email: <a href="mailto:serveyourcoffee@gmail.com">serveyourcoffee@gmail.com</a></p>
+      <p>Phone: <a href="tel:+12605999996">260-599-9996</a></p>
 
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required aria-required="true">
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true">
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message"></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4"></textarea>
 
-      <button type="submit">Send</button>
-    </form>
-  </section>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 K&A Coffee Shop – Fort Wayne</p>
+    <p>&copy; 2025 K&A Coffee Truck – Fort Wayne</p>
+    <p>
+      <a href="https://instagram.com/yourtruck" target="_blank" rel="noopener">Instagram</a> |
+      <a href="https://facebook.com/yourtruck" target="_blank" rel="noopener">Facebook</a>
+    </p>
   </footer>
 </body>
 </html>
-
