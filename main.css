@@ -3,12 +3,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #fdf6e3; /* Cream background */
   color: #333;
 }
 
 header {
-  background-image: url('img.jpg');
+  background-image: url('img.jpg'); /* Pinterest coffee image */
   background-size: cover;
   background-position: center;
   color: white;
@@ -26,10 +26,10 @@ header p {
   margin-top: 10px;
 }
 
-
 header nav ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 20px;
 }
 
 header nav li {
@@ -45,14 +45,14 @@ header nav a {
 
 section {
   padding: 20px;
-  margin: 10px;
-  background-color: white;
+  margin: 10px auto;
+  max-width: 900px;
+  background-color: #e6f0d4; /* Light green */
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-  color: #6f4e37;
+  color: #6f4e37; /* Coffee brown */
 }
 
 table {
@@ -110,8 +110,5 @@ footer {
   padding: 10px;
   background-color: #6f4e37;
   color: white;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+  margin-top: 20px;
 }
-
