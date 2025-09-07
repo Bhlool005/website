@@ -1,6 +1,6 @@
 # K&A Coffee Truck
 
-Welcome to the official website for K&A Coffee Truck, serving fresh coffee on the go in Fort Wayne!
+<b>Welcome to the official website for K&A Coffee Truck, serving fresh coffee on the go in Fort Wayne!</b>
 
 ## 🌐 Live Website
 [Visit our site!](https://bhlool005.github.io/website/)
