@@ -1,3 +1,9 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf6e3; /* Cream background */
+  color: #333;
 /* Tablets (iPad, 601px to 1024px) */
 @media (max-width: 1024px) and (min-width: 601px) {
   header { padding: 70px 15px; font-size: 1.7em; }
@@ -6,6 +12,127 @@
   nav li { margin: 0 10px; }
 }
 
+header {
+  background-color: #6f4e37; /* fallback coffee brown */
+  background-image: url('https://wallpapercave.com/wp/wp4717526.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+header nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+section {
+  padding: 20px;
+  margin: 20px auto;
+  background-color: #e6f0d4; /* Light green */
+  border-radius: 8px;
+}
+
+h2 {
+  color: #6f4e37; /* Coffee brown */
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #6f4e37;
+  color: white;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea, form button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form button {
+  background-color: #6f4e37;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+form button:hover {
+  background-color: #5a3e2e;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #6f4e37;
+  color: white;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #ffe082;
+  text-decoration: none;
+  margin: 0 8px;
 /* Smartphones (max 600px) */
 @media (max-width: 600px) {
   header { padding: 50px 10px; font-size: 1.2em; }
@@ -15,9 +142,29 @@
   nav li { margin: 0 5px; }
 }
 
+footer a:hover {
+  text-decoration: underline;
 .menu-icon {
   width: 24px;
   height: 24px;
   vertical-align: middle;
   margin-right: 6px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header {
+    padding: 50px 10px;
+    font-size: 1.2em;
+  }
+  section {
+    padding: 10px;
+    margin: 10px 0;
+  }
+  table, th, td {
+    font-size: 0.95em;
+  }
+  img {
+    max-width: 100%;
+  }
 }
