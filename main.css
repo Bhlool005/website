@@ -38,7 +38,7 @@ header nav li {
 }
 
 header nav a {
-  color: white;
+  color: #333; /* or #6f4e37 for a coffee look */
   text-decoration: none;
   font-weight: bold;
 }
