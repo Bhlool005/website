@@ -8,6 +8,7 @@ body {
 }
 
 header {
+  background-color: #6f4e37; /* fallback coffee brown */
   background-image: url('https://wallpapercave.com/wp/wp4717526.jpg');
   background-size: cover;
   background-position: center;
