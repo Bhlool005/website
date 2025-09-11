@@ -2,150 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>K&A Coffee Truck</title>
   <meta name="description" content="Fresh coffee on the go – Check out our menu, locations, and contact info!">
+  <link rel="stylesheet" href="main.css">
   <style>
     body {
-      font-family: 'Courier New', monospace;
-      margin: 0;
-      background-color: #fdf6f0;
-      color: #5b2e1b;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
+      background: #fdf6f0;
+      color: #5a3e36;
+      padding: 20px;
     }
-
     header {
-      background-image: url('https://marketplace.canva.com/EAF2Xztb3Mw/1/0/518w/canva-pink-simple-coffee-shop-menu-MZpXKbx4W8k.jpg');
-      background-size: cover;
-      background-position: center;
-      padding: 60px 20px;
       text-align: center;
-      color: #fff;
+      padding: 20px;
     }
-
-    header h1 {
-      font-size: 48px;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 20px;
-    }
-
     nav ul {
       list-style: none;
       padding: 0;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 20px;
     }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
+    nav ul li {
+      display: inline;
+      margin: 0 10px;
     }
-
-    h2 {
-      border-top: 2px solid #c98f66;
-      padding-top: 30px;
-      color: #8b3e2f;
-    }
-
-    main {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .menu-section {
-      margin-bottom: 40px;
-    }
-
     .menu-table {
       width: 100%;
       border-collapse: collapse;
+      margin-bottom: 40px;
     }
-
     .menu-table td {
       padding: 10px 5px;
       vertical-align: top;
     }
-
     .item-name {
       font-weight: bold;
       width: 70%;
     }
-
     .item-price {
       text-align: right;
       width: 30%;
+      font-size: 0.95em;
+      color: #6b3e26;
+      white-space: nowrap;
     }
-
     .description {
       font-size: 0.9em;
       color: #a15b3b;
     }
-
-    #locations ul {
-      list-style-type: square;
-      padding-left: 20px;
+    h2 {
+      border-bottom: 2px solid #e3c7b9;
+      padding-bottom: 5px;
     }
-
-    #contact form {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    label {
-      font-weight: bold;
-    }
-
-    input, textarea, button {
-      padding: 8px;
-      font-size: 1em;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-    }
-
-    button {
-      background-color: #8b3e2f;
-      color: #fff;
-      cursor: pointer;
-      border: none;
-    }
-
-    button:hover {
-      background-color: #a3563c;
-    }
-
     footer {
-      background-color: #eee2dc;
-      padding: 20px;
       text-align: center;
-      font-size: 14px;
-      margin-top: 40px;
+      margin-top: 50px;
+      font-size: 0.9em;
     }
-
-    footer a {
-      color: #8b3e2f;
+    a {
+      color: #b97c5c;
       text-decoration: none;
-      margin: 0 5px;
     }
-
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-      }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
-  <!-- Header -->
+
   <header>
     <h1>K&A Coffee Truck</h1>
     <p>Fresh Coffee on the Go – Fort Wayne</p>
@@ -158,82 +83,88 @@
     </nav>
   </header>
 
-  <!-- Main Content -->
-  <main>
-    <!-- MENU -->
-    <section id="menu">
-      <h2>Coffee Menu</h2>
+  <main id="menu">
+    <h1>Coffee Menu</h1>
 
-      <!-- HOT COFFEE -->
-      <div class="menu-section">
-        <h3>Hot Coffee</h3>
-        <table class="menu-table">
-          <tr><td class="item-name">Black Coffee</td><td class="item-price">$2.50</td></tr>
-          <tr><td colspan="2" class="description">A classic, strong cup of black coffee made from freshly ground beans.</td></tr>
-          <tr><td class="item-name">Latte</td><td class="item-price">$3.50</td></tr>
-          <tr><td colspan="2" class="description">Espresso combined with steamed milk and topped with a small amount of foam.</td></tr>
-          <tr><td class="item-name">Cappuccino</td><td class="item-price">$3.75</td></tr>
-          <tr><td colspan="2" class="description">Equal parts espresso, steamed milk, and foam for a rich and frothy texture.</td></tr>
-          <tr><td class="item-name">Americano</td><td class="item-price">$3.00</td></tr>
-          <tr><td colspan="2" class="description">Hot water added to a shot of espresso for a lighter, yet bold coffee.</td></tr>
-        </table>
-      </div>
+    <!-- HOT COFFEE -->
+    <div class="menu-section">
+      <h2>Hot Coffee</h2>
+      <table class="menu-table">
+        <tr><td class="item-name">Espresso (Single Shot)</td><td class="item-price">$2.00</td></tr>
+        <tr><td colspan="2" class="description">A bold, concentrated shot of espresso.</td></tr>
 
-      <!-- COLD COFFEE -->
-      <div class="menu-section">
-    <h3>Cold Coffee</h3>
-<table class="menu-table">
-  <tr><td class="item-name">Iced Coffee</td><td class="item-price">$3.00 / $3.50 / $4.00</td></tr>
-  <tr><td colspan="2" class="description">Available in 8 oz / 12 oz / 16 oz. Chilled black coffee served over ice cubes.</td></tr>
+        <tr><td class="item-name">Double Espresso</td><td class="item-price">$2.75</td></tr>
+        <tr><td colspan="2" class="description">Twice the strength and volume of a single shot.</td></tr>
 
-  <tr><td class="item-name">Cold Brew</td><td class="item-price">$3.75 / $4.25 / $4.75</td></tr>
-  <tr><td colspan="2" class="description">Available in 8 oz / 12 oz / 16 oz. Brewed with cold water for a smooth, low-acid flavor.</td></tr>
+        <tr><td class="item-name">Black Coffee</td><td class="item-price">8oz - $2.00 / 12oz - $2.50 / 16oz - $3.00</td></tr>
+        <tr><td colspan="2" class="description">Classic strong brewed black coffee.</td></tr>
 
-  <tr><td class="item-name">Espresso Tonic</td><td class="item-price">$4.00</td></tr>
-  <tr><td colspan="2" class="description">Served in standard size (12 oz). A shot of espresso over ice with tonic water—refreshing and bold.</td></tr>
+        <tr><td class="item-name">Latte</td><td class="item-price">8oz - $3.00 / 12oz - $3.50 / 16oz - $4.00</td></tr>
+        <tr><td colspan="2" class="description">Espresso with steamed milk and light foam.</td></tr>
 
-  <tr><td class="item-name">Iced Chai Latte</td><td class="item-price">$3.75 / $4.25 / $4.75</td></tr>
-  <tr><td colspan="2" class="description">Available in 8 oz / 12 oz / 16 oz. Spiced tea mixed with cold milk and chai syrup.</td></tr>
-</table>
+        <tr><td class="item-name">Cappuccino</td><td class="item-price">8oz - $3.25 / 12oz - $3.75 / 16oz - $4.25</td></tr>
+        <tr><td colspan="2" class="description">Equal parts espresso, steamed milk, and foam.</td></tr>
 
-      </div>
+        <tr><td class="item-name">Americano</td><td class="item-price">8oz - $2.50 / 12oz - $3.00 / 16oz - $3.50</td></tr>
+        <tr><td colspan="2" class="description">Espresso topped with hot water.</td></tr>
+      </table>
+    </div>
 
-      <!-- NON COFFEE -->
-      <div class="menu-section">
-       <h3>Non Coffee</h3>
-<table class="menu-table">
-  <tr><td class="item-name">Hot Tea (Various Flavors)</td><td class="item-price">$2.00 / $2.50 / $3.00</td></tr>
-  <tr><td colspan="2" class="description">Available in 8 oz / 12 oz / 16 oz. Classic and herbal teas served hot.</td></tr>
+    <!-- COLD COFFEE -->
+    <div class="menu-section">
+      <h2>Cold Coffee</h2>
+      <table class="menu-table">
+        <tr><td class="item-name">Iced Coffee</td><td class="item-price">8oz - $2.75 / 12oz - $3.00 / 16oz - $3.50</td></tr>
+        <tr><td colspan="2" class="description">Chilled brewed coffee over ice.</td></tr>
 
-  <tr><td class="item-name">Hot Chocolate</td><td class="item-price">$3.00 / $3.50 / $4.00</td></tr>
-  <tr><td colspan="2" class="description">Available in 8 oz / 12 oz / 16 oz. Rich and creamy, topped with whipped cream.</td></tr>
+        <tr><td class="item-name">Cold Brew</td><td class="item-price">8oz - $4.00 / 12oz - $4.50 / 16oz - $5.00</td></tr>
+        <tr><td colspan="2" class="description">Smooth, slow-brewed cold coffee.</td></tr>
 
-  <tr><td class="item-name">Chai Latte</td><td class="item-price">$3.75 / $4.25 / $4.75</td></tr>
-  <tr><td colspan="2" class="description">Available in 8 oz / 12 oz / 16 oz. Spiced tea latte with steamed milk and chai concentrate.</td></tr>
+        <tr><td class="item-name">Espresso Tonic</td><td class="item-price">$4.00 (12oz only)</td></tr>
+        <tr><td colspan="2" class="description">Espresso over ice with tonic water.</td></tr>
 
-  <tr><td class="item-name">Herbal Infusion</td><td class="item-price">$2.50 / $3.00 / $3.50</td></tr>
-  <tr><td colspan="2" class="description">Available in 8 oz / 12 oz / 16 oz. A calming blend of herbal infusions.</td></tr>
-</table>
+        <tr><td class="item-name">Iced Chai Latte</td><td class="item-price">8oz - $3.75 / 12oz - $4.25 / 16oz - $4.75</td></tr>
+        <tr><td colspan="2" class="description">Chai tea mixed with milk and ice.</td></tr>
+      </table>
+    </div>
 
-      </div>
+    <!-- NON COFFEE -->
+    <div class="menu-section">
+      <h2>Non-Coffee</h2>
+      <table class="menu-table">
+        <tr><td class="item-name">Hot Tea (Various Flavors)</td><td class="item-price">8oz - $2.00 / 12oz - $2.50 / 16oz - $3.00</td></tr>
+        <tr><td colspan="2" class="description">Selection of black, green, and herbal teas.</td></tr>
 
-      <!-- SNACKS -->
-      <div class="menu-section">
-        <h3>Snacks Menu</h3>
-        <table class="menu-table">
-          <tr><td class="item-name">Classic Bruschetta</td><td class="item-price">$5.50</td></tr>
-          <tr><td colspan="2" class="description">Toasted baguette slices topped with diced tomatoes, garlic, basil, and olive oil.</td></tr>
-          <tr><td class="item-name">Assorted Cookies</td><td class="item-price">$2.50</td></tr>
-          <tr><td colspan="2" class="description">Freshly baked cookies including chocolate chip and oatmeal raisin.</td></tr>
-          <tr><td class="item-name">Brownie Bites</td><td class="item-price">$4.00</td></tr>
-          <tr><td colspan="2" class="description">Bite-sized chocolate brownies with a fudgy center.</td></tr>
-          <tr><td class="item-name">Yogurt Parfait</td><td class="item-price">$7.50</td></tr>
-          <tr><td colspan="2" class="description">Yogurt, granola, and fresh berries layered for a healthy treat.</td></tr>
-        </table>
-      </div>
-    </section>
+        <tr><td class="item-name">Hot Chocolate</td><td class="item-price">8oz - $3.00 / 12oz - $3.50 / 16oz - $4.00</td></tr>
+        <tr><td colspan="2" class="description">Creamy cocoa topped with whipped cream.</td></tr>
 
-    <!-- Locations -->
+        <tr><td class="item-name">Chai Latte</td><td class="item-price">8oz - $3.75 / 12oz - $4.25 / 16oz - $4.75</td></tr>
+        <tr><td colspan="2" class="description">Spiced tea with steamed milk.</td></tr>
+
+        <tr><td class="item-name">Herbal Infusion</td><td class="item-price">8oz - $2.50 / 12oz - $3.00 / 16oz - $3.50</td></tr>
+        <tr><td colspan="2" class="description">Relaxing blend of herbal infusions.</td></tr>
+      </table>
+    </div>
+
+    <!-- SNACKS MENU -->
+    <div class="menu-section">
+      <h2>Snacks Menu</h2>
+      <table class="menu-table">
+        <tr><td class="item-name">Classic Bruschetta</td><td class="item-price">$5.50</td></tr>
+        <tr><td colspan="2" class="description">Toasted baguette with tomato, basil, garlic & olive oil.</td></tr>
+
+        <tr><td class="item-name">Assorted Cookies</td><td class="item-price">$2.50</td></tr>
+        <tr><td colspan="2" class="description">Fresh baked cookies (chocolate chip, oatmeal, more).</td></tr>
+
+        <tr><td class="item-name">Brownie Bites</td><td class="item-price">$4.00</td></tr>
+        <tr><td colspan="2" class="description">Fudgy, bite-sized chocolate brownies.</td></tr>
+
+        <tr><td class="item-name">Yogurt Parfait</td><td class="item-price">$7.50</td></tr>
+        <tr><td colspan="2" class="description">Layers of yogurt, granola, and berries.</td></tr>
+      </table>
+    </div>
+
+    <!-- Locations Section -->
     <section id="locations">
       <h2>Locations</h2>
       <ul>
@@ -242,33 +173,32 @@
       </ul>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact">
       <h2>Contact Us</h2>
       <p>Email: <a href="mailto:serveyourcoffee@gmail.com">serveyourcoffee@gmail.com</a></p>
       <p>Phone: <a href="tel:+12605999996">260-599-9996</a></p>
 
       <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4"></textarea>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4"></textarea><br><br>
 
         <button type="submit">Send</button>
       </form>
     </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 K&A Coffee Truck – Fort Wayne</p>
     <p>
-      <a href="https://instagram.com/yourtruck" target="_blank">Instagram</a> |
-      <a href="https://facebook.com/yourtruck" target="_blank">Facebook</a>
+      <a href="https://instagram.com/yourtruck" target="_blank" rel="noopener">Instagram</a> |
+      <a href="https://facebook.com/yourtruck" target="_blank" rel="noopener">Facebook</a>
     </p>
   </footer>
 </body>
