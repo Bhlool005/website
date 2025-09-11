@@ -21,63 +21,109 @@
     </nav>
   </header>
 
-  <!-- Menu Section -->
-  <main>
-    <section id="menu">
-      <h2>Our Menu</h2>
-     
-   <table style="width: 100%; border-collapse: collapse; font-family: Arial, sans-serif;">
-  <!-- Coffee Section -->
-  <tr style="background-color: #f2f2f2;">
-    <th colspan="2" style="font-size: 20px; text-align: left; padding: 10px;">Coffee</th>
-  </tr>
-  <tr><td style="padding: 8px;">Espresso</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Double Espresso</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Latte</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Americano</td><td style="padding: 8px;">$7.00</td></tr>
-  <tr><td style="padding: 8px;">Macchiato</td><td style="padding: 8px;">$8.00</td></tr>
-  <tr><td style="padding: 8px;">Flat White</td><td style="padding: 8px;">$9.00</td></tr>
-  <tr><td style="padding: 8px;">Cappuccino</td><td style="padding: 8px;">$10.00</td></tr>
-  <tr><td style="padding: 8px;">Mocha</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Cold Brew</td><td style="padding: 8px;">$4.00</td></tr>
+ .menu-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .menu-table td {
+      padding: 10px 5px;
+      vertical-align: top;
+    }
+    .item-name {
+      font-weight: bold;
+      width: 70%;
+    }
+    .item-price {
+      text-align: right;
+      width: 30%;
+    }
+    .description {
+      font-size: 0.9em;
+      color: #a15b3b;
+    }
+    .location {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
 
-  <!-- Non-Coffee Section -->
-  <tr style="background-color: #f2f2f2;">
-    <th colspan="2" style="font-size: 20px; text-align: left; padding: 10px;">Non-Coffee</th>
-  </tr>
-  <tr><td style="padding: 8px;">Hot Chocolate</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Milkshake</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Smoothie</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Lemonade</td><td style="padding: 8px;">$7.00</td></tr>
-  <tr><td style="padding: 8px;">Vanilla Milkshake</td><td style="padding: 8px;">$8.00</td></tr>
+  <h1>Coffee Menu</h1>
 
-  <!-- Tea Section -->
-  <tr style="background-color: #f2f2f2;">
-    <th colspan="2" style="font-size: 20px; text-align: left; padding: 10px;">Tea</th>
-  </tr>
-  <tr><td style="padding: 8px;">Lemon Tea</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Mango Tea</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Jasmine</td><td style="padding: 8px;">$7.00</td></tr>
-  <tr><td style="padding: 8px;">Green Tea</td><td style="padding: 8px;">$10.00</td></tr>
-  <tr><td style="padding: 8px;">Mint Tea</td><td style="padding: 8px;">$10.00</td></tr>
+  <!-- HOT COFFEE -->
+  <div class="menu-section">
+    <h2>Hot Coffee</h2>
+    <table class="menu-table">
+      <tr><td class="item-name">Black Coffee</td><td class="item-price">$2.50</td></tr>
+      <tr><td colspan="2" class="description">A classic, strong cup of black coffee made from freshly ground beans.</td></tr>
+      
+      <tr><td class="item-name">Latte</td><td class="item-price">$3.50</td></tr>
+      <tr><td colspan="2" class="description">Espresso combined with steamed milk and topped with a small amount of foam.</td></tr>
+      
+      <tr><td class="item-name">Cappuccino</td><td class="item-price">$3.75</td></tr>
+      <tr><td colspan="2" class="description">Equal parts espresso, steamed milk, and foam for a rich and frothy texture.</td></tr>
+      
+      <tr><td class="item-name">Americano</td><td class="item-price">$3.00</td></tr>
+      <tr><td colspan="2" class="description">Hot water added to a shot of espresso for a lighter, yet bold coffee.</td></tr>
+    </table>
+  </div>
 
-  <!-- Dessert Section -->
-  <tr style="background-color: #f2f2f2;">
-    <th colspan="2" style="font-size: 20px; text-align: left; padding: 10px;">Desserts</th>
-  </tr>
-  <tr><td style="padding: 8px;">Strawberry Waffle</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Chocolate Waffle</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Cinnamon Roll</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Brownies</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Lemon Pie</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Croissant</td><td style="padding: 8px;">$5.00</td></tr>
-  <tr><td style="padding: 8px;">Cheesecake</td><td style="padding: 8px;">$7.00</td></tr>
-  <tr><td style="padding: 8px;">Chocolate Muffin</td><td style="padding: 8px;">$10.00</td></tr>
-</table>
+  <!-- COLD COFFEE -->
+  <div class="menu-section">
+    <h2>Cold Coffee</h2>
+    <table class="menu-table">
+      <tr><td class="item-name">Iced Coffee</td><td class="item-price">$3.00</td></tr>
+      <tr><td colspan="2" class="description">Chilled black coffee served over ice cubes.</td></tr>
 
-      <img src="https://i.pinimg.com/originals/29/78/de/2978de6ec1fa07066fe83273b1b7a10e.jpg" alt="A selection of coffee drinks from our truck">
-    </section>
+      <tr><td class="item-name">Cold Brew</td><td class="item-price">$4.50</td></tr>
+      <tr><td colspan="2" class="description">Coffee brewed with cold water over an extended period, resulting in a smooth, less acidic flavor.</td></tr>
 
+      <tr><td class="item-name">Espresso Tonic</td><td class="item-price">$4.00</td></tr>
+      <tr><td colspan="2" class="description">A shot of espresso served over ice with tonic water for a refreshing drink.</td></tr>
+
+      <tr><td class="item-name">Iced Chai Latte</td><td class="item-price">$4.25</td></tr>
+      <tr><td colspan="2" class="description">Spiced tea mixed with cold milk and chai syrup.</td></tr>
+    </table>
+  </div>
+
+  <!-- NON COFFEE -->
+  <div class="menu-section">
+    <h2>Non Coffee</h2>
+    <table class="menu-table">
+      <tr><td class="item-name">Hot Tea (Various Flavors)</td><td class="item-price">$2.50</td></tr>
+      <tr><td colspan="2" class="description">A selection of classic and herbal teas served hot.</td></tr>
+
+      <tr><td class="item-name">Hot Chocolate</td><td class="item-price">$3.50</td></tr>
+      <tr><td colspan="2" class="description">Rich and creamy hot chocolate topped with whipped cream.</td></tr>
+
+      <tr><td class="item-name">Chai Latte</td><td class="item-price">$4.25</td></tr>
+      <tr><td colspan="2" class="description">Spiced tea latte made with steamed milk and chai concentrate.</td></tr>
+
+      <tr><td class="item-name">Herbal Infusion</td><td class="item-price">$3.00</td></tr>
+      <tr><td colspan="2" class="description">A calming blend of herbal infusions, perfect for relaxation.</td></tr>
+    </table>
+  </div>
+
+  <!-- SNACKS MENU -->
+  <div class="menu-section">
+    <h2>Snacks Menu</h2>
+    <table class="menu-table">
+      <tr><td class="item-name">Classic Bruschetta</td><td class="item-price">$5.50</td></tr>
+      <tr><td colspan="2" class="description">Toasted baguette slices topped with diced tomatoes, garlic, basil, and olive oil.</td></tr>
+
+      <tr><td class="item-name">Assorted Cookies</td><td class="item-price">$2.50</td></tr>
+      <tr><td colspan="2" class="description">A variety of freshly baked cookies, including chocolate chip and oatmeal raisin.</td></tr>
+
+      <tr><td class="item-name">Brownie Bites</td><td class="item-price">$4.00</td></tr>
+      <tr><td colspan="2" class="description">Bite-sized chocolate brownies with a fudgy center.</td></tr>
+
+      <tr><td class="item-name">Yogurt Parfait</td><td class="item-price">$7.50</td></tr>
+      <tr><td colspan="2" class="description">Layers of yogurt, granola, and fresh berries for a healthy and satisfying treat.</td></tr>
+    </table>
+  </div>
+  
     <!-- Locations Section -->
     <section id="locations">
       <h2>Locations</h2>
@@ -87,8 +133,7 @@
       </ul>
       <!-- Optional: Google Maps Embed Example -->
       <!-- <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="200" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
-      <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="200" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </section>
+    
 
     <!-- Contact Section -->
     <section id="contact">
